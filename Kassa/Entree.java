@@ -1,5 +1,5 @@
 package com.company.Kassa;
-
+// even kijken of dit werkt!!
 import com.company.Attracties.*;
 import com.company.Attracties.Eten.*;
 
