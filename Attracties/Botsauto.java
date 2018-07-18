@@ -1,7 +1,8 @@
 package com.company.Attracties;
 
-public class Botsauto {
+public class Botsauto extends Attractie {
+    double prijs = 2.50;
+
     public void rijden(){
-//        System.out.println("Wij rijden in de botsauto!!!");
     }
 }
