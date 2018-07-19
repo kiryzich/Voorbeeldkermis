@@ -3,6 +3,7 @@ package com.company.Kassa;
 import java.util.Scanner;
 
 public class Winkelmandje{
+    int ticketAantal;
     //   double ticketPrijs;
     int ticketBesellen(){
         System.out.println("Hoeveel tickets wilt u bestellen?");
@@ -11,4 +12,5 @@ public class Winkelmandje{
         int ticketAantal = inputTicket;
         return ticketAantal;
     }
+//            System.out.println(+ Winkelmandje.ticketAantal + " besteld");
 }
