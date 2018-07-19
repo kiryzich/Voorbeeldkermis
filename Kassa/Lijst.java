@@ -55,7 +55,7 @@ public class Lijst { // deze lijst moet de andere lijsten aanroepen
             case 1:
                 y = 1;
                 System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
-                Winkelmandje.ticketBesellen();
+  //              Winkelmandje.ticketBesellen();
   //              System.out.println("U heeft " + ticketAantal + " tickets besteld voor de " + attractie[(y-1)] + ". Dit kost €" + (prijs[(y-1)] * Winkelmandje.ticketAantal) + ".");
                 doorGaanMetBestellen();
                 break;

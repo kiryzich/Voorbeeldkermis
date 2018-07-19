@@ -11,28 +11,8 @@ import java.util.Scanner;
 public class Entree {
     public static void main(String[] args) {
         Klant klantID = new Klant();
+        klantID.voorstellen();
         Lijst entree = new Lijst();
         entree.start();
-//        botsauto1.rijden();
     }
-}
-
-class Klant{
-    String naam;
-}
-
-
-class Winkelmandje{
- //   double ticketPrijs;
-    static int ticketBesellen(){
-        System.out.println("Hoeveel tickets wilt u bestellen?");
-        Scanner sc2 = new Scanner(System.in);
-        int inputTicket = sc2.nextInt();
-        int ticketAantal = inputTicket;
-        return ticketAantal;
-    }
-}
-
-class TellerEen{
-
 }
