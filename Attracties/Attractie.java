@@ -3,12 +3,19 @@ package com.company.Attracties;
 abstract public class Attractie {
     String naam;
     int prijs;
+    int oppervlakte;
+    Attractie() {
+        Hawaii attractieEen = new Hawaii();
+
+
+    }
     //Parentclass
 }
 
 class Hawaii extends Attractie implements RisicoRijkeAttractie{
     @Override
-    public boolean opstellingsKeuring() {
+    public boolean opstellingsKeuring(
+                                      ) {
         return false;
     }
 }

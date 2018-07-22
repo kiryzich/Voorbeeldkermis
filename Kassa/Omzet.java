@@ -2,13 +2,16 @@ package com.company.Kassa;
 
 public class Omzet {
 
-    void printLijst(){
-
+    static void printLijst(){
+        System.out.println("omzetprintje");
+        System.out.println();
     }
-    void printBelasting(){
-
+    static void printBelasting(){
+        System.out.println("belastingprintje");
+        System.out.println();
     }
-    void printRisico(){
-
+    static void printRisico(){
+        System.out.println("risicoprintje");
+        System.out.println();
     }
 }

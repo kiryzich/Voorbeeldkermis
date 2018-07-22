@@ -8,6 +8,7 @@ Bij binnenkomst krijgt de klant een NAAM en een IDNUMMER (voor de opdracht begin
 public class Kermis {
     public static void main(String[] args) {
         Klant klantID = new Klant();
+        Omzet omzet = new Omzet();
         klantID.voorstellen();
         Assortiment entree = new Assortiment();
         entree.start();

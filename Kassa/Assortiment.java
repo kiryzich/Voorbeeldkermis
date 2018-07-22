@@ -20,7 +20,7 @@ public class Assortiment { // deze lijst moet de andere lijsten aanroepen
     }
 
     String[] attractie = {"De botsauto's", "De legendarische spin", "Het spiegelpaleis", "Het spookhuis", "De hawaaiiiii", "Het ladderzatklimmen"};
-    int[] prijs = {250,225,275,320,290,500};
+    double[] prijs = {250,225,275,320,290,500};
 
     void start() {
         System.out.println("Kies een nummer om verder te gaan");
@@ -28,7 +28,7 @@ public class Assortiment { // deze lijst moet de andere lijsten aanroepen
     }
 
     void doorGaanMetBestellen() { //voor het plaatsen van NOG een bestelling
-        System.out.print("Wilt u nog een bestelling doen? [ja] of [nee]");
+        System.out.print("Wilt u nog een ticket kopen? [ja] of [nee]");
         System.out.println("");
         Scanner sc2 = new Scanner(System.in);
         String weer = sc2.nextLine();
@@ -37,13 +37,16 @@ public class Assortiment { // deze lijst moet de andere lijsten aanroepen
             case "Ja":
             case "jA":
             case "JA":   // 4 verschillende (2 letters op 2 maniers = 2^2 = 4 maniered) geschreven zodat de Ja hoe dan ook gepakt wordt!
-                System.out.println("U kunt uw volgende bestelling plaatsen!");
+                System.out.println("In welke attractie wilt u nu?");
                 bestellen();
                 break;
             case "nee":
             case "Nee":
             case "NEE": // de andere spelfouten pakt de default maar hoor!
-                System.out.println("Bedankt voor uw bestelling!");
+                System.out.println("De omzet voor vandaag wordt nu geprint!");
+                Omzet.printLijst();
+                Omzet.printBelasting();
+                Omzet.printRisico();
                 break;
             default:
                 System.out.println("Dit is geen geldige keuze, probeer het opnieuw! [Derp Derp]");
@@ -59,7 +62,6 @@ public class Assortiment { // deze lijst moet de andere lijsten aanroepen
             System.out.println((x + 1) + " - " + attractie[x] + " dit kost €" + (prijs[x]/100) + ".");
         }
 
-        System.out.println("B - ");
         Scanner sc = new Scanner(System.in);
         int y = sc.nextInt();
 
@@ -95,6 +97,10 @@ public class Assortiment { // deze lijst moet de andere lijsten aanroepen
                 System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
                 doorGaanMetBestellen();
                 break;
+            case 7:
+                y = 'b';
+                System.out.println("Ohjee, de belastinginspecteur Marjolijn is gearriveerd!");
+
             default :
                 System.out.println("Uw keuze staat er niet bij, kies opnieuw");
                 bestellen();
