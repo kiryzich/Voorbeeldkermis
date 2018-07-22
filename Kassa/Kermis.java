@@ -5,14 +5,11 @@ Ik zal zo veel mogelijk van de stappen proberen te beschrijven. Dit gedeelte bes
 Bij binnenkomst krijgt de klant een NAAM en een IDNUMMER (voor de opdracht begin ik bij 1)
 */
 
-import com.company.Attracties.*;
-import java.util.Scanner;
-
-public class Entree {
+public class Kermis {
     public static void main(String[] args) {
         Klant klantID = new Klant();
         klantID.voorstellen();
-        Lijst entree = new Lijst();
+        Assortiment entree = new Assortiment();
         entree.start();
     }
 }

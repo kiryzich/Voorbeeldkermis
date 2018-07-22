@@ -1,14 +1,26 @@
 package com.company.Kassa;
-
+///toevoegen
 import java.util.Scanner;
 
-public class Lijst { // deze lijst moet de andere lijsten aanroepen
-    Lijst() {
-        System.out.println("Welkom bij de kermis. Wat wilt u gaan doen?");
+class Kassa{
+    int ticketAantal;
+    //   double ticketPrijs;
+    static int ticketBestellen(){
+        System.out.println("Hoeveel tickets wilt u bestellen?");
+        Scanner sc2 = new Scanner(System.in);
+        int inputTicket = sc2.nextInt();
+        int ticketAantal = inputTicket;
+        return ticketAantal;
+    }
+}
+
+public class Assortiment { // deze lijst moet de andere lijsten aanroepen
+    Assortiment() {
+        System.out.println("Welkom bij de kermis. " + Klant.naam + " Wat wilt u gaan doen?");
     }
 
     String[] attractie = {"De botsauto's", "De legendarische spin", "Het spiegelpaleis", "Het spookhuis", "De hawaaiiiii", "Het ladderzatklimmen"};
-    double[] prijs = {2.50,2.25,2.75,3.20,2.90,5.00};
+    int[] prijs = {250,225,275,320,290,500};
 
     void start() {
         System.out.println("Kies een nummer om verder te gaan");
@@ -44,10 +56,10 @@ public class Lijst { // deze lijst moet de andere lijsten aanroepen
         System.out.println("Voor welke attractie wilt u een ticket kopen?");
         int x;
         for (x = 0; x < attractie.length; x++) {
-            System.out.println((x + 1) + " - " + attractie[x] + " dit kost €" + prijs[x] + ".");
+            System.out.println((x + 1) + " - " + attractie[x] + " dit kost €" + (prijs[x]/100) + ".");
         }
 
-        System.out.println("TOT HIER <<<<<<<<<<< PLACEHOLDER");
+        System.out.println("B - ");
         Scanner sc = new Scanner(System.in);
         int y = sc.nextInt();
 
@@ -55,8 +67,7 @@ public class Lijst { // deze lijst moet de andere lijsten aanroepen
             case 1:
                 y = 1;
                 System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
-  //              Winkelmandje.ticketBesellen();
-  //              System.out.println("U heeft " + ticketAantal + " tickets besteld voor de " + attractie[(y-1)] + ". Dit kost €" + (prijs[(y-1)] * Winkelmandje.ticketAantal) + ".");
+                Kassa.ticketBestellen();
                 doorGaanMetBestellen();
                 break;
             case 2:
@@ -91,3 +102,30 @@ public class Lijst { // deze lijst moet de andere lijsten aanroepen
         }
     }
 }
+
+
+class Bestelling {
+    public Bestelling(){
+        int[] ticketsVerkocht = new int[6];
+        int risicoTicketSpin = 0;
+        int risicoTicketHawaii = 0;
+    }
+    static String naam;
+    int ID = 1;
+    int klantTeller = 1;
+    String voorstellen(){
+        System.out.println("naam?");
+        Scanner sc3 = new Scanner(System.in);
+        String inputNaam = sc3.nextLine();
+        inputNaam = naam;
+//        Klant.tellenKlant(ID);
+        return naam;
+    }
+    int tellenKlant(int ID){
+        klantTeller = (++ID);
+        System.out.println(naam);
+        return ID;
+    }
+
+}
+// if String.equals("Arne"){ start inspecteur)
