@@ -1,6 +1,4 @@
 package com.company.Kassa;
-///toevoegen
-import com.company.Attracties.*;
 
 import java.util.Scanner;
 
@@ -26,6 +24,7 @@ public class Kermis { // deze lijst moet de andere lijsten aanroepen
 
     void start() {
         System.out.println("Kies een nummer om verder te gaan");
+        System.out.println();
         bestellen();
     }
 
@@ -88,27 +87,33 @@ public class Kermis { // deze lijst moet de andere lijsten aanroepen
 
         switch (y) {
             case 1:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
+                Botsauto.draaien();
                 doorGaanMetBestellen();
                 break;
             case 2:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + ".");
+                Spin.draaien();
                 doorGaanMetBestellen();
                 break;
             case 3:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + ".");
+                Spiegelpaleis.draaien();
                 doorGaanMetBestellen();
                 break;
             case 4:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
+                Spookhuis.draaien();
                 doorGaanMetBestellen();
                 break;
             case 5:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
+                Hawaii.draaien();
                 doorGaanMetBestellen();
                 break;
             case 6:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + prijs[(y-1)]);
+                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
+                Ladder.draaien();
                 doorGaanMetBestellen();
                 break;
             case 7:

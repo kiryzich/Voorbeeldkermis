@@ -10,6 +10,7 @@ public class Kermisprogramma {
         Kassa kassa = new Kassa();
         Omzet omzet = new Omzet();
         Kermis entree = new Kermis();
+        Hawaii attractieEen = new Hawaii();
         entree.start();
     }
 }
