@@ -1,15 +1,16 @@
-package com.company.Kassa;
+package com.company.Kermisprogramma;
 
 abstract public class Attractie {
     static String naam;
     int prijs;
     int oppervlakte;
     //Parentclass
+//    static int[] verkochteTickets = new int[6];
+
 }
 
 class Hawaii extends Attractie implements RisicoRijkeAttractie {
     static int ticket;
-
     public boolean opstellingsKeuring(
     ) {
         return false;
@@ -23,7 +24,7 @@ class Hawaii extends Attractie implements RisicoRijkeAttractie {
     }
 }
 
-class Spin extends com.company.Kassa.Attractie implements com.company.Kassa.RisicoRijkeAttractie {
+class Spin extends com.company.Kermisprogramma.Attractie implements com.company.Kermisprogramma.RisicoRijkeAttractie {
     static int ticket;
         public boolean opstellingsKeuring() {
         return false;
@@ -37,7 +38,7 @@ class Spin extends com.company.Kassa.Attractie implements com.company.Kassa.Risi
     }
 }
 
-class Ladder extends com.company.Kassa.Attractie {
+class Ladder extends com.company.Kermisprogramma.Attractie {
     static int ticket;
     static int draaien(){
         ticket = ++ticket;
@@ -48,7 +49,7 @@ class Ladder extends com.company.Kassa.Attractie {
     }
 }
 
-class Spiegelpaleis extends com.company.Kassa.Attractie {
+class Spiegelpaleis extends com.company.Kermisprogramma.Attractie {
     static int ticket;
     static int draaien(){
         ticket = ++ticket;
@@ -59,7 +60,7 @@ class Spiegelpaleis extends com.company.Kassa.Attractie {
     }
 }
 
-class Botsauto extends com.company.Kassa.Attractie {
+class Botsauto extends com.company.Kermisprogramma.Attractie {
     static int ticket;
     static int draaien(){
         ticket = ++ticket;
@@ -70,7 +71,7 @@ class Botsauto extends com.company.Kassa.Attractie {
     }
 }
 
-class Spookhuis extends com.company.Kassa.Attractie {
+class Spookhuis extends com.company.Kermisprogramma.Attractie {
     static int ticket;
     static int draaien(){
         ticket = ++ticket;

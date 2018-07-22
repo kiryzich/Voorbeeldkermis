@@ -1,17 +1,11 @@
-package com.company.Kassa;
+package com.company.Kermisprogramma;
 
 import java.util.Scanner;
 
 class Kassa{
-    int ticketAantal;
-    //   double ticketPrijs;
-    static int ticketBestellen(){
-        System.out.println("Hoeveel tickets wilt u bestellen?");
-        Scanner sc2 = new Scanner(System.in);
-        int inputTicket = sc2.nextInt();
-        int ticketAantal = inputTicket;
-        return ticketAantal;
-    }
+    //toevoegen velden
+    int verkochteTickets;
+    int totaleOmzet;
 }
 
 public class Kermis { // deze lijst moet de andere lijsten aanroepen
