@@ -1,22 +1,25 @@
 package com.company.Attracties;
 
 abstract public class Attractie {
-    String naam;
+    Hawaii attractieEen = new Hawaii();
+    static String naam;
     int prijs;
     int oppervlakte;
-    Attractie() {
-        Hawaii attractieEen = new Hawaii();
-
-
-    }
+//    attractieEen.naam = "Hawaii";
+    int draaien;
     //Parentclass
 }
 
 class Hawaii extends Attractie implements RisicoRijkeAttractie{
+
+
     @Override
     public boolean opstellingsKeuring(
                                       ) {
         return false;
+    }
+    void draaien(){
+        System.out.println(attractieEen.naam + "draait!");
     }
 }
 
