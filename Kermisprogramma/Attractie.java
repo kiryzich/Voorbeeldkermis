@@ -6,6 +6,8 @@ abstract public class Attractie {
     static String naam;
     int prijs;
     int oppervlakte;
+    int omzet;
+    // kijken bij ROY, public ztten en per attractie kijken wat de omzet wrdt.
 //    int[] verkochteTickts = new int[ticket1, ticket2, ticket3, ticket4, ticket5, ticket6];
     //Parentclass
 //    static int[] verkochteTickets = new int[6];
@@ -114,3 +116,6 @@ interface RisicoRijkeAttractie {
     int totaalrondjes1 = 0;
     int totaalrondjes2 = 0;
  */
+
+class draailimit extends Exception{
+}

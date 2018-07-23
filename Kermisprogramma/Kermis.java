@@ -75,42 +75,36 @@ public class Kermis { // deze lijst moet de andere lijsten aanroepen
         for (x = 0; x < attractie.length; x++) {
             System.out.println((x + 1) + " - " + attractie[x] + " dit kost €" + (prijs[x]/100) + ".");
         }
-        System.out.println("7 - Andere actie");
+        System.out.println("99 - Andere actie");
         Scanner sc = new Scanner(System.in);
         int y = sc.nextInt();
-
+        System.out.println(">>>U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + ".");
         switch (y) {
             case 1:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
                 Botsauto.draaien();
                 doorGaanMetBestellen();
                 break;
             case 2:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + ".");
                 Spin.draaien();
                 doorGaanMetBestellen();
                 break;
             case 3:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + ".");
                 Spiegelpaleis.draaien();
                 doorGaanMetBestellen();
                 break;
             case 4:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
                 Spookhuis.draaien();
                 doorGaanMetBestellen();
                 break;
             case 5:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
                 Hawaii.draaien();
                 doorGaanMetBestellen();
                 break;
             case 6:
-                System.out.println("U heeft een ticket gekocht voor " + attractie[(y-1)] + ", met een prijs van €" + (prijs[(y-1)]/100) + "0.");
                 Ladder.draaien();
                 doorGaanMetBestellen();
                 break;
-            case 7:
+            case 99:
                 System.out.println("b - Belastinginspecteur");
                 System.out.println("o - Omzet printen");
                 menuTwee();
